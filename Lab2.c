@@ -5,7 +5,7 @@ int main() {
 	printf("Enter string: ");
 	fgets(string, 101, stdin);
 	for (i = 0; i <= 100; i++) {
-		if (string[i] == ' ') {
+		if ((string[i] == ' ') | (string[i] == '	')) {
 			if (string[i + 1] != ' ')  {
 				printf("\n");
 			}
